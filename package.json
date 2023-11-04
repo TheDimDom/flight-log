@@ -1,0 +1,29 @@
+{
+  "name": "tech-log",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "postinstall": "preconstruct dev && manypkg check",
+    "build": "preconstruct build",
+    "release": "yarn preconstruct build && yarn changeset publish"
+  },
+  "workspaces": [
+    "packages/*",
+    "fe",
+    "cms/*"
+  ],
+  "dependencies": {
+    "@changesets/cli": "^2.26.2",
+    "@manypkg/cli": "^0.21.0",
+    "@preconstruct/cli": "^2.8.1"
+  },
+  "preconstruct": {
+    "packages": [
+      "packages/*",
+      "cms/*"
+    ]
+  }
+}

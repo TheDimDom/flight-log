@@ -1,5 +1,5 @@
 import React from "react";
-import DataTable from "./Components/FlightList";
+import FlightList from "./Components/FlightList";
 
 const Index = () => {
   const rows = [
@@ -61,7 +61,7 @@ const Index = () => {
 
   return (
     <div>
-      <DataTable rows={rows} />
+      <FlightList rows={rows} />
     </div>
   );
 };

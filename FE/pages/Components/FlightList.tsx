@@ -1,11 +1,11 @@
 import * as React from "react";
 import { DataGrid, GridColDef } from "@mui/x-data-grid";
 
-interface DataTableProps {
+interface FlightListProps {
   rows: Row[];
 }
 
-interface Row {
+export interface Row {
   id: number;
   name: string;
   date: string;
@@ -32,7 +32,7 @@ const columns: GridColDef[] = [
   },
 ];
 
-const DataTable: React.FC<DataTableProps> = ({ rows }) => {
+const FlightList: React.FC<FlightListProps> = ({rows}:FlightListProps) => {
   return (
     <div
       style={{
@@ -47,4 +47,4 @@ const DataTable: React.FC<DataTableProps> = ({ rows }) => {
   );
 };
 
-export default DataTable;
+export default FlightList;

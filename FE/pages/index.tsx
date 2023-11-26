@@ -70,7 +70,7 @@ const Index = () => {
       <AddFlightModal
         open={addFlightModalOpen}
         setAddFlightModalOpen={setAddFlightModalOpen}
-        tachoStart={rows[0].tachoEnd}
+        tachoStart={flightData[0].tachoEnd}
         setFlightData={setFlightData}
       />
       <FlightList rows={flightData} />

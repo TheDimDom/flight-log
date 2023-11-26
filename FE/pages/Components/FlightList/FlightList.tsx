@@ -32,12 +32,12 @@ const columns: GridColDef[] = [
   },
 ];
 
-const FlightList: React.FC<FlightListProps> = ({rows}:FlightListProps) => {
+const FlightList: React.FC<FlightListProps> = ({ rows }: FlightListProps) => {
   return (
     <div
       style={{
         height: 450,
-        width: "27%",
+        width: "100%",
         justifyContent: "center",
         alignItems: "center",
       }}
